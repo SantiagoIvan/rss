@@ -1,0 +1,7 @@
+rss
+.vscode/
+.env
+thunder-tests/
+vendor/
+out
+*.exe
