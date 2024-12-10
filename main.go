@@ -24,7 +24,8 @@ func main() {
 
 	// V1 router
 	v1router := chi.NewRouter() // para cuando tenes diferentes versiones
-	v1router.Get("/health", handlerHealth)
+	v1router.Get("/health", handleHealth)
+	v1router.Get("/error", handleError)
 
 	// configuracion del middleware
 	router.Use(cors.Default().Handler)
